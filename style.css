@@ -170,6 +170,40 @@ main {
   cursor: pointer;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+   
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+   
+  input, textarea {
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+    border-radius: 5px;
+  }
+   
+  button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: var(--yellow);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+  }
+
 footer {
   text-align: center;
   padding: 20px 0;
