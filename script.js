@@ -32,13 +32,13 @@ const items = [
       rating: 4.7,
     },
     {
-        title: "Gucci Flora by Gucci edp",
-        description: "Flora by Gucci Eau de Parfum — манящий цветочный аромат для милых дам! Аромат относится к типу цветочных.",
-        tags: ["зима", "весна"],
-        price: 250,
-        img: "./img/4.jpg",
-        rating: 3.7,
-      },
+      title: "Gucci Flora by Gucci edp",
+      description: "Flora by Gucci Eau de Parfum — манящий цветочный аромат для милых дам! Аромат относится к типу цветочных.",
+      tags: ["зима", "весна"],
+      price: 250,
+      img: "./img/4.jpg",
+      rating: 3.7,
+      }, //задублировала карточку, но указала другой рейтинг и цену, чтобы сортировку проверить
     {
       title: "Baldessarini Ambre",
       description: "Композиция насыщена амбровыми, древесными, фруктовыми аккордами, что бы продемонстрировать все грани мужской натуры – жесткость и решительность, доброту и щедрость.",
@@ -138,6 +138,7 @@ const items = [
     currentState = items.filter((el) =>
       el.title.toLowerCase().includes(searchString)
     );
+    
     currentState.sort((a, b) => sortByAlphabet(a, b));
 
     renderItems(currentState);

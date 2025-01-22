@@ -170,6 +170,18 @@ main {
   cursor: pointer;
 }
 
+.no-items-message {
+    text-align: center;
+    margin: 100px 0;
+    font-weight: bold;
+  }
+  
+  #nothing-found {
+    color: var(--dark);
+    font-weight: 500;
+    font-size: 36px;
+  }
+
 form {
     display: flex;
     flex-direction: column;
@@ -190,7 +202,7 @@ form {
     border-radius: 5px;
   }
    
-  button {
+  .submit-button {
     margin-top: 10px;
     padding: 5px 10px;
     background-color: var(--yellow);
@@ -199,7 +211,7 @@ form {
     border-radius: 5px;
   }
 
-  button:hover {
+  .submit-button:hover {
     box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
     transform: translateY(-5px);
   }
@@ -207,16 +219,6 @@ form {
 footer {
   text-align: center;
   padding: 20px 0;
-}
-
-#nothing-found {
-  color: var(--dark);
-  position: absolute;
-  white-space: nowrap;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: 500;
 }
 
 .filters {
